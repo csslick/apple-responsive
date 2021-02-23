@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive image grid</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100%;
+      margin: 0 aut0;
+    }
+    .row {
+      overflow: hidden;
+    }
+    .col_6 {
+      width: 50%;
+      float: left;
+    }
+
+    section{
+      width: 100%;
+      background: #efefef;
+    }
+
+    /* 가로 가변, 높이값 고정, 이미지 좌우 가로 가변폭 최대치 여유폭 지정 */
+    figure:first-child {
+      width: 50%;
+      height: 580px;
+      background: url(watch01.jpg);
+      background-position: center;
+    }
+
+    figure:last-child {
+      width: 50%;
+      height: 580px;
+      background-color: #000;
+      background-image: url(watch02.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <figure class="col_6">
+    </figure>
+    <figure class="col_6">
+    </figure>
+  </section>
+</body>
+</html>
